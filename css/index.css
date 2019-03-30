@@ -1,0 +1,64 @@
+*{
+  margin: 0;
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+h1{
+  font-family: 'Anton', sans-serif;
+  font-size: 1.5em;
+}
+
+header{
+  background: #00a0f0;
+  height: 50px;
+  color: rgba(256, 256, 256, .7);
+  transition: .2s;
+}
+
+header .contheader{
+  max-width: 800px;
+  margin: auto;
+}
+
+header .contheader .burguermenu{
+  width: 47px;
+}
+
+header .contheader .burguermenu i{
+  padding: 13px;
+  
+}
+
+header .contheader .burguermenu i:hover{
+  color: white;
+  
+}
+
+header .contheader .nombre svg{
+  height: 50px;
+  float: right;
+  opacity: .7;
+  transition: .2s;
+}
+
+header .contheader .nombre svg:hover{
+  opacity: 1;
+}
+
+.creador .contfondo{
+  width: 100%;
+  margin: auto;
+  max-width: 800px;
+
+}
+.creador img{
+  width: 100%;
+  
+}
+
+.creador .nombre{
+  color: grey;
+  
+}
