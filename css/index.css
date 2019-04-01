@@ -89,3 +89,54 @@ header .contheader .nombre svg:hover{
   background-size: contain; /* Resize the background image to cover the entire container */
 
 }
+
+/* COLORES */
+
+.contColores{
+  margin: 30px auto 0;
+  
+  max-width: 800px;
+  height: 300px; 
+  
+  background: grey;
+}
+
+.contColores div{
+  color: white;
+  
+}
+.contColores div h1{
+  font-size: .8em;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+.contColores .principal{
+  background: #00a0f0;
+}
+.contColores .comp1{
+  background: #00aef3;
+}
+.contColores .comp2{
+  background: #008eee;
+}
+
+.colorActive{
+  height: 100%;
+}
+
+.colorNoActive{
+  height: 0;
+}
+
+.contColores .row{
+  margin: 0;
+}
+
+.principal .colorQ{
+  margin-top: 70px;
+}
+
+.principal p{
+  margin-bottom: 10px;
+}

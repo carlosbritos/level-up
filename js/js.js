@@ -1,3 +1,15 @@
+var funciones = {
+
+  assambleColorProperties: function(){
+    return '<div class="col-6 colorQ">'
+    +'<p>Profesional</p>'
+    +'<p>Serio</p>'
+    +'<p>Integro</p>'
+    +'<p>Sincero</p>'  
+    +'</div>'
+  }
+}
+
 $(document).ready(function(){
 
   $('.owl-carousel').owlCarousel({
@@ -25,7 +37,25 @@ $(document).ready(function(){
   })
 
 
-
+  $('.colorClick').on( "click", function(){
+    $('.colorClick').toggleClass("colorNoActive");
+    $(this).toggleClass("colorActive colorNoActive");
+    if($(this).hasClass("comp1")){
+      $(this).toggleClass("col-6 col-12");
+    }
+    else if($(this).hasClass("comp2")){
+      $(this).toggleClass("col-6 col-12");
+    }
+    else{
+      if($(this).hasClass("colorActive")){
+        $('.principal').append(funciones.assambleColorProperties());
+      }
+      else{
+        $('.colorQ').remove();
+        // $('.principal').remove(funciones.assambleColorProperties());
+      }
+    }
+  })
 
 
 
