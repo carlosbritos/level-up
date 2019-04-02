@@ -13,12 +13,13 @@ var funciones = {
 $(document).ready(function(){
 
   $('.owl-carousel').owlCarousel({
+    
     loop:true,
     margin:0,
     nav:false,
     center:true,
     dots:false,
-    autoplay:true,
+    autoplay:false,
     items:1,
 
 
@@ -35,6 +36,7 @@ $(document).ready(function(){
         }
     } */
   })
+
 
 
   $('.colorClick').on( "click", function(){
