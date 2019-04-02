@@ -19,7 +19,7 @@ $(document).ready(function(){
     nav:false,
     center:true,
     dots:false,
-    autoplay:false,
+    autoplay:true,
     items:1,
 
 
