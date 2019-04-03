@@ -80,9 +80,6 @@ header .contheader .nombre svg:hover{
   margin-top: 12px;
 }
 
-.owl-stage{
-}
-
 .owl-item{
   background: rgba(0, 0, 0, .9);
 }
@@ -241,6 +238,10 @@ header .contheader .nombre svg:hover{
   height: auto;
   margin: 0 auto 0;
   position: absolute;
+
+  visibility: visible;
+  opacity: 1;
+  
   
 }
 .construccionDelLogo .contImages img{

@@ -59,6 +59,15 @@ $(document).ready(function(){
     }
   })
 
+  $('.contImages').on( "click", function(){
+    if($(this).hasClass("ult")){
+      $('.contImages').css("visibility","visible","opacity","1");
+    }
+    else{
+      $(this).css("visibility","hidden","opacity","0");
+    }
+  })
+
 
 
 
