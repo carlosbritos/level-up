@@ -165,11 +165,11 @@ header .contheader .nombre svg:hover{
 
 .tipografia .fuentePrincipal h1{
   font-family: American Captain;
-  padding: 12px;
+  padding: 25px 0 0;
   margin-bottom: 0;
 }
 
-.tipografia .fuentePrincipal h2{
+.tipografia .prin h2{
   color: white;
   text-align: center;
   margin-top: 12px;
@@ -177,13 +177,40 @@ header .contheader .nombre svg:hover{
 }
 
 .tipografia .fuenteComp h1{
-  padding: 12px;
+  font-family: 'Caveat', cursive;
+  padding: 25px 0 0;
   margin-bottom: 0;
 }
 
+/* CONSTRUCCION DEL LOGO*/
+
+/* botones */ 
+  .botones{
+    max-width: 80 0px;
+    position: relative;
+    margin: auto;
+    z-index: 20;
+  }
+  
+  .botones div{
+    font-size: 33px;
+    font-family: 'Anton', sans-serif;
+    width: 50%;
+  }
+
+  .btn-prev{
+    position: absolute;
+    left: 0;
+  }
+
+  .btn-next{
+    position: absolute;
+    right: 0;
+  }
+/* construccion */
+
 .construccionDelLogo{
   margin: 30px auto 0;
-  background: #008eee;
   max-width: 800px;
   height: auto;
 }
