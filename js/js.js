@@ -8,6 +8,12 @@ var funciones = {
     +'<p>Sincero</p>'  
     +'</div>'
   },
+
+  transicionDeImagenes: function(este){
+    $('.active').toggleClass('active').prev().toggleClass('active');
+
+
+  },
 }
 
 $(document).ready(function(){
@@ -87,16 +93,28 @@ $(document).ready(function(){
 
   /* SLIDER FOTOS CONSTRUCCION DE LOGO  */
 
-  /*
-  $('.contImages').on( "click", function(){
-    if($(this).hasClass("ult")){
-      $('.contImages').css("visibility","visible","opacity","1");
+  
+  $('.btn-next').on( "click", function(){
+
+    if($('.active').hasClass('first')){
+      $('.first, .last').toggleClass('active');
     }
     else{
-      $(this).css("visibility","hidden","opacity","0");
+      $('.active').toggleClass('active').prev().toggleClass('active');
+    }
+
+  })
+
+  $('.btn-prev').on( "click", function(){
+
+    if($('.active').hasClass('last')){
+      $('.first, .last').toggleClass('active');
+    }
+    else{
+      $('.active').toggleClass('active').next().toggleClass('active');
     }
   })
-  */
+ 
 
 
 

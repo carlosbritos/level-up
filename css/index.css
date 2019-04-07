@@ -199,7 +199,7 @@ header .contheader .nombre svg:hover{
   }
   
   .botones > div > div{
-    font-size: 20px;
+    font-size: 24px;
     font-family: 'Anton', sans-serif;
     text-align: center;  
     color: white;
@@ -209,15 +209,18 @@ header .contheader .nombre svg:hover{
   }
   
   .btn-prev div{
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     background: #00aef3; 
     border-radius: 50%;
+
+    position: absolute;
+    right: 0;
   }
   
   .btn-next div{
-    height: 30px;
-    width: 30px;
+    height: 35px;
+    width: 35px;
     background: #00aef3; 
     border-radius: 50%;
   }
@@ -228,67 +231,30 @@ header .contheader .nombre svg:hover{
 .construccionDelLogo{
   margin: 30px auto 0;
   max-width: 800px;
+  position: relative;
 }
 
 
-.construccionDelLogo .contImages:nth-child(1){
-  z-index: 15;
+.construccionDelLogo .contImages:first-child{
   position: static;
+}
 
-}
-.construccionDelLogo .contImages:nth-child(2){
-  z-index: 14;
-}
-.construccionDelLogo .contImages:nth-child(3){
-  z-index: 13;
-}
-.construccionDelLogo .contImages:nth-child(4){
-  z-index: 12;
-}
-.construccionDelLogo .contImages:nth-child(5){
-  z-index: 11;
-}
-.construccionDelLogo .contImages:nth-child(6){
-  z-index: 10;
-}
-.construccionDelLogo .contImages:nth-child(7){
-  z-index: 9;
-}
-.construccionDelLogo .contImages:nth-child(8){
-  z-index: 8;
-}
-.construccionDelLogo .contImages:nth-child(9){
-  z-index: 7;
-}
-.construccionDelLogo .contImages:nth-child(10){
-  z-index: 6;
-}
-.construccionDelLogo .contImages:nth-child(11){
-  z-index: 5;
-}
-.construccionDelLogo .contImages:nth-child(12){
-  z-index: 4;
-}
-.construccionDelLogo .contImages:nth-child(13){
-  z-index: 3;
-}
-.construccionDelLogo .contImages:nth-child(14){
-  z-index: 2;
-}
-.construccionDelLogo .contImages:nth-child(15){
-  z-index: 1;
-}
 .construccionDelLogo .contImages{
   max-width: 800px;
   margin: 0 auto 0;
   position: absolute;
 
   visibility: visible;
-  opacity: 1;
+  opacity: 0;
   top: 0;
   
+  transition: .5s;
   
 }
 .construccionDelLogo .contImages img{
   width: 100%;
+}
+
+.contImages.active{
+  opacity: 1;
 }
