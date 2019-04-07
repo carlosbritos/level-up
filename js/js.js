@@ -9,11 +9,10 @@ var funciones = {
     +'</div>'
   },
 
-  transicionDeImagenes: function(este){
-    $('.active').toggleClass('active').prev().toggleClass('active');
-
-
+  assamblecolorprincipal: function(){
+    return '<div>Color Principal</div>'
   },
+
 }
 
 $(document).ready(function(){
@@ -115,23 +114,38 @@ $(document).ready(function(){
     }
   })
 
-  $('.colorescent > div').on("click", function(){
+  $('.circulo').on("click", function(){
     if($(this).hasClass('aPrincipal')){
-      $('.colorescent > div').removeClass('activecolor');
-      $(this).addClass('activecolor');
+      $('.colorescent .circulo').css({
+        'width': '80px',
+        'height': '80px',
+      })
+      $(this).css({
+        'width': '90px',
+        'height': '90px',
+      })
       $('body').css('background','#00a0f0');
-      $('.nombrecolor').append(function(){
-        return '<div>hola</div>'
-      });
     }
     else if($(this).hasClass('aComp1')){
-      $('.colorescent > div').removeClass('activecolor');
-      $(this).addClass('activecolor');
+      $('.colorescent .circulo').css({
+        'width': '80px',
+        'height': '80px',
+      })
+      $(this).css({
+        'width': '90px',
+        'height': '90px',
+      })
       $('body').css('background','#00aef3');
     }
     else{
-      $('.colorescent > div').removeClass('activecolor');
-      $(this).addClass('activecolor');
+      $('.colorescent .circulo').css({
+        'width': '80px',
+        'height': '80px',
+      })
+      $(this).css({
+        'width': '90px',
+        'height': '90px',
+      })
       $('body').css('background','#008eee');
     }
 
