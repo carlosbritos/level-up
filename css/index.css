@@ -8,6 +8,14 @@
   font-family: 'Caveat', cursive;
   font-weight: 700;
   font-size: 24px;
+
+}
+body{
+  background: #00a0f0;
+  transition: ease 1s;
+}
+.row{
+  margin: 0;
 }
 
 h1{
@@ -52,26 +60,36 @@ header .contheader .nombre svg:hover{
   opacity: 1;
 }
 
-.creador .contfondo{
+/* -------CREADOR------- */
+.creador{
   width: 100%;
-  margin: auto;
+  margin: 0;
+}
+
+.contnombre{
+  width: 100%;
   max-width: 800px;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.contfondo{
+  width: 100%;
 
 }
+
 .creador img{
   width: 100%;
   
 }
-
-.creador .nombre{
-  color: grey;
-  
-}
-
+/* ---------------- */
+/* SLIDER VALORES */
 .valores{
   margin: auto;
   margin-top: 30px;
-  max-width: 800px;
+  /* max-width: 800px; */
 }
 
 .item h2{
@@ -85,14 +103,51 @@ header .contheader .nombre svg:hover{
 }
 
 .owl-carousel{
-  background: url(../assets/fondo-creador/1x/comics.png);
+  background: url(../assets/fondo-creador/fondo1-01.png);
 
   background-position: center; /* Center the image */
   background-size: contain; /* Resize the background image to cover the entire container */
 
 }
 
-/* COLORES */
+/* COLORES 1*/
+.contCambiodecolor{
+  height: 200px;
+}
+.colorescent .activecolor{
+  width:110px;
+  height:110px;
+}
+.colorescent{
+  margin: auto;
+}
+.colorescent div{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  border: white solid 3px;
+  transition: ease .2s;
+}
+
+.aPrincipal{
+  background: #00a0f0;
+}
+.aComp1{
+  background: #00aef3;
+}
+.aComp2{
+  background: #008eee;
+}
+
+.nombrecolor{
+  width: 100%;
+  height: 40px;
+}
+
+
+
+/* COLORES 2*/
 
 .contColores{
   margin: 30px auto 0;
@@ -152,7 +207,6 @@ header .contheader .nombre svg:hover{
 } */
 
 .tipografia{
-  max-width: 800px;
   margin: 30px auto 0;
   color: white;
   text-align: center;
@@ -165,7 +219,7 @@ header .contheader .nombre svg:hover{
 
 .tipografia .fuentePrincipal h1{
   font-family: American Captain;
-  padding: 25px 0 0;
+  padding: 10px 0 0;
   margin-bottom: 0;
 }
 
@@ -178,7 +232,7 @@ header .contheader .nombre svg:hover{
 
 .tipografia .fuenteComp h1{
   font-family: 'Caveat', cursive;
-  padding: 25px 0 0;
+  padding: 10px 0 0;
   margin-bottom: 0;
 }
 
@@ -186,10 +240,7 @@ header .contheader .nombre svg:hover{
 
 /* botones */ 
   .botones{
-    max-width: 800px;
-    /* position: relative; */
-    margin: auto;
-    /* z-index: 20; */
+    padding: 20px;
   }
   
   .botones > div{
@@ -230,7 +281,6 @@ header .contheader .nombre svg:hover{
 
 .construccionDelLogo{
   margin: 30px auto 0;
-  max-width: 800px;
   position: relative;
 }
 
@@ -240,7 +290,6 @@ header .contheader .nombre svg:hover{
 }
 
 .construccionDelLogo .contImages{
-  max-width: 800px;
   margin: 0 auto 0;
   position: absolute;
 
@@ -255,6 +304,25 @@ header .contheader .nombre svg:hover{
   width: 100%;
 }
 
-.contImages.active{
+.contImages.opacityactive{
   opacity: 1;
+}
+
+/* --------------- */
+/* SLIDER APLICACIONES */
+/* .slide{
+  margin-top: 30px;
+} */
+
+footer{
+  width: 100%;
+  height: 100px;
+  background: #008eee;
+  color: white;
+  text-align: center;
+}
+
+footer svg{
+  height: 100px;
+  opacity: .8;
 }

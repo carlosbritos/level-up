@@ -56,17 +56,17 @@ $(document).ready(function(){
 
 
 
-    /* responsive:{
+    responsive:{
         0:{
-            items:1
+            items:10
         },
         600:{
-            items:1
+            items:20
         },
         800:{
-            items:3
+            items:30
         }
-    } */
+    }
   })
 
 
@@ -96,23 +96,45 @@ $(document).ready(function(){
   
   $('.btn-next').on( "click", function(){
 
-    if($('.active').hasClass('first')){
-      $('.first, .last').toggleClass('active');
+    if($('.opacityactive').hasClass('first')){
+      $('.first, .last').toggleClass('opacityactive');
     }
     else{
-      $('.active').toggleClass('active').prev().toggleClass('active');
+      $('.opacityactive').toggleClass('opacityactive').prev().toggleClass('opacityactive');
     }
 
   })
 
   $('.btn-prev').on( "click", function(){
 
-    if($('.active').hasClass('last')){
-      $('.first, .last').toggleClass('active');
+    if($('.opacityactive').hasClass('last')){
+      $('.first, .last').toggleClass('opacityactive');
     }
     else{
-      $('.active').toggleClass('active').next().toggleClass('active');
+      $('.opacityactive').toggleClass('opacityactive').next().toggleClass('opacityactive');
     }
+  })
+
+  $('.colorescent > div').on("click", function(){
+    if($(this).hasClass('aPrincipal')){
+      $('.colorescent > div').removeClass('activecolor');
+      $(this).addClass('activecolor');
+      $('body').css('background','#00a0f0');
+      $('.nombrecolor').append(function(){
+        return '<div>hola</div>'
+      });
+    }
+    else if($(this).hasClass('aComp1')){
+      $('.colorescent > div').removeClass('activecolor');
+      $(this).addClass('activecolor');
+      $('body').css('background','#00aef3');
+    }
+    else{
+      $('.colorescent > div').removeClass('activecolor');
+      $(this).addClass('activecolor');
+      $('body').css('background','#008eee');
+    }
+
   })
  
 
