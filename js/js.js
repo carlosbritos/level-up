@@ -7,7 +7,7 @@ var funciones = {
     +'<p>Integro</p>'
     +'<p>Sincero</p>'  
     +'</div>'
-  }
+  },
 }
 
 $(document).ready(function(){
@@ -84,6 +84,10 @@ $(document).ready(function(){
     }
   })
 
+
+  /* SLIDER FOTOS CONSTRUCCION DE LOGO  */
+
+  /*
   $('.contImages').on( "click", function(){
     if($(this).hasClass("ult")){
       $('.contImages').css("visibility","visible","opacity","1");
@@ -92,6 +96,7 @@ $(document).ready(function(){
       $(this).css("visibility","hidden","opacity","0");
     }
   })
+  */
 
 
 

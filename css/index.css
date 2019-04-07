@@ -186,37 +186,55 @@ header .contheader .nombre svg:hover{
 
 /* botones */ 
   .botones{
-    max-width: 80 0px;
-    position: relative;
+    max-width: 800px;
+    /* position: relative; */
     margin: auto;
-    z-index: 20;
+    /* z-index: 20; */
   }
   
-  .botones div{
-    font-size: 33px;
+  .botones > div{
+    padding: 10px;
+    /* width: 50%; */
+    /* height: 450px; */
+  }
+  
+  .botones > div > div{
+    font-size: 20px;
     font-family: 'Anton', sans-serif;
-    width: 50%;
+    text-align: center;  
+    color: white;
+  }
+  .botones > div:visited > div{
+    background: gray;
+  }
+  
+  .btn-prev div{
+    height: 30px;
+    width: 30px;
+    background: #00aef3; 
+    border-radius: 50%;
+  }
+  
+  .btn-next div{
+    height: 30px;
+    width: 30px;
+    background: #00aef3; 
+    border-radius: 50%;
   }
 
-  .btn-prev{
-    position: absolute;
-    left: 0;
-  }
 
-  .btn-next{
-    position: absolute;
-    right: 0;
-  }
 /* construccion */
 
 .construccionDelLogo{
   margin: 30px auto 0;
   max-width: 800px;
-  height: auto;
 }
+
 
 .construccionDelLogo .contImages:nth-child(1){
   z-index: 15;
+  position: static;
+
 }
 .construccionDelLogo .contImages:nth-child(2){
   z-index: 14;
@@ -262,12 +280,12 @@ header .contheader .nombre svg:hover{
 }
 .construccionDelLogo .contImages{
   max-width: 800px;
-  height: auto;
   margin: 0 auto 0;
   position: absolute;
 
   visibility: visible;
   opacity: 1;
+  top: 0;
   
   
 }
